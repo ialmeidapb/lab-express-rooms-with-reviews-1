@@ -15,3 +15,9 @@ app.use(express.json());
 
 // Inicia o servidor para escutar requisições HTTP na porta 4000
 app.listen(PORT, () => console.log(`Server up and running at port ${PORT}`));
+
+
+// Importa e configura nossas rotas
+const roomRouter = require("./routes/room.routes");
+
+app.use("/", roomRouter);
