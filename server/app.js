@@ -4,6 +4,8 @@ const express = require("express");
 
 const PORT = 4000;
 
+const app = express();
+
 
 // Importando as configurações do banco de dados e inicializando a conexão
 const db = require("./config/db.config");
